@@ -20,9 +20,9 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 def main():
     # --- Configuration Section ---
     # All parameters are defined here instead of using command-line arguments.
-    dataset_path = '/data1/xml/Detection/ultralytics-main/data/detection/'
-    weights_path = '/data1/xml/ControlFusion0127/experiments/ControlFusion_train_20260517-191507/weights/checkpoint_lastest.pth'
-    save_path = '/data1/xml/Detection/ultralytics-main/data/detection/Proposed2605170/images/'
+    dataset_path = '/data1/xml/data/'
+    weights_path = '/weights/checkpoint_lastest.pth'
+    save_path = ''
     device_name = 'cuda'
     gpu_id = '0'
 
@@ -40,8 +40,8 @@ def main():
 
     supported = [".jpg", ".JPG", ".png", ".PNG", ".bmp", 'tif', 'TIF']
     
-    visible_root = os.path.join(dataset_path, "vi/images/")
-    infrared_root = os.path.join(dataset_path, "ir/images/")
+    visible_root = os.path.join(dataset_path, "vi/")
+    infrared_root = os.path.join(dataset_path, "ir/")
 
     visible_path = [os.path.join(visible_root, i) for i in os.listdir(visible_root)
                     if os.path.splitext(i)[-1] in supported]
