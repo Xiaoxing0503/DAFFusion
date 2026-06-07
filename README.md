@@ -3,11 +3,13 @@
 Degradation Atoms Frequency Perception for Infrared and Visible Image Fusion
 
 
-#
+## Checkpoint
 [checkpoint]()
 
-##Degradation Datasets
+## Degradation Datasets
 constructed composite degradation image fusion [datasets]().
 
-#
-[Dataset]() used for semantic segmentation. [Dataset]() used for object detection. 
+## Downstream Application datasets
+[Degradation Dataset]() used for semantic segmentation. [Degradation Dataset]() used for object detection. 
+
+
