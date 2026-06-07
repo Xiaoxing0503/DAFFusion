@@ -426,7 +426,7 @@ def main(args):
             param.requires_grad = False
     model_degrad = DA_adapter(model_clip).to(device)
     model_degrad.set_frozen()
-    checkpoint_de = torch.load('/data1/xml/ControlFusion0127/experiments/ControlFusion_train_stage1_20260517-120951/weights/checkpointdegradprior_lastest.pth', map_location=device)
+    checkpoint_de = torch.load('/weights/checkpointdegradprior_lastest.pth', map_location=device)
     model_degrad.load_state_dict(checkpoint_de['model'])
 
     model = create_model().to(device)
