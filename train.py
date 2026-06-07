@@ -559,7 +559,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=8)
     parser.add_argument('--lr', type=float, default=0.0001)
     parser.add_argument('--val_every_epcho', type=int, default=10, help='val every epcho')
-    parser.add_argument('--resume', default= '/data1/xml/ControlFusion0127/experiments/ControlFusion_train_20260517-191507/weights/checkpoint_lastest.pth', help='resume from checkpoint')
+    parser.add_argument('--resume', default= '/weights/checkpoint_lastest.pth', help='resume from checkpoint')
     parser.add_argument('--use_dp', default = False, help='use dp-multigpus')
     parser.add_argument('--device', default='cuda', help='device (i.e. cuda or cpu)')
     parser.add_argument('--gpu_id', default='0', help='device id (i.e. 0, 1, 2 or 3)')
